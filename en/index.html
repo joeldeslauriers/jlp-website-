@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe Laurier Production — Trap & Hip-Hop Beats</title>
+  <meta name="description"
+    content="Professional trap and hip-hop beats with 15+ years of experience. Free Mix & Mastering included with every purchase. 72-hour turnaround.">
+  <meta property="og:title" content="Joe Laurier Production — Trap & Hip-Hop Beats">
+  <meta property="og:description"
+    content="Professional trap & hip-hop beats. 15+ years of experience. Free Mix & Mastering included.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS depuis la racine (chemin relatif depuis /en/) -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+       ==================================================== -->
+  <nav>
+    <a class="nav-logo" href="/en/">
+      <img src="../assets/Logo.png" alt="Joe Laurier Production">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#beats">Beats</a></li>
+      <li><a href="#mix-master">Mix &amp; Master</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="/" class="btn-lang">FR</a>
+      <span class="btn-lang active" aria-current="true">EN</span>
+      <a href="https://www.beatstars.com/joelaurierproduction" target="_blank" rel="noopener" class="btn-beatstars">
+        BeatStars ↗
+      </a>
+    </div>
+
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="navMobile" role="navigation" aria-label="Mobile menu">
+    <a href="#beats">Beats</a>
+    <a href="#mix-master">Mix &amp; Master</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.beatstars.com/joelaurierproduction" target="_blank" rel="noopener">BeatStars ↗</a>
+    <div class="mobile-actions">
+      <a href="/" class="btn-lang">FR</a>
+      <span class="btn-lang active">EN</span>
+    </div>
+  </div>
+
+
+  <!-- ====================================================
+       HERO
+       ==================================================== -->
+  <section id="hero">
+
+    <!-- Modern studio background -->
+    <div class="hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <!-- JLP signature claws — left -->
+        <g stroke="#1E90FF" stroke-linecap="round" fill="none" opacity="0.45">
+          <path stroke-width="4" d="M 60 30  Q 100 220  55 460" />
+          <path stroke-width="3.5" d="M 95 18  Q 140 208  90 448" />
+          <path stroke-width="3" d="M 130  6  Q 180 196  125 436" />
+          <path stroke-width="2.5" d="M 165  0  Q 220 184  160 424" />
+        </g>
+        <!-- JLP signature claws — right -->
+        <g stroke="#1E90FF" stroke-linecap="round" fill="none" opacity="0.35">
+          <path stroke-width="3.5" d="M 1280 40  Q 1315 230 1275 470" />
+          <path stroke-width="3" d="M 1315 28  Q 1355 218 1310 458" />
+          <path stroke-width="2.5" d="M 1350 16  Q 1395 206 1345 446" />
+        </g>
+        <!-- Mixing console horizontal line -->
+        <line x1="0" y1="420" x2="1440" y2="420" stroke="#1E90FF" stroke-width="0.6" opacity="0.08" />
+        <line x1="0" y1="422" x2="1440" y2="422" stroke="#1E90FF" stroke-width="0.3" opacity="0.05" />
+        <!-- Console button dots -->
+        <g fill="#1E90FF" opacity="0.18">
+          <circle cx="200" cy="421" r="2.5" /><circle cx="260" cy="421" r="2.5" />
+          <circle cx="320" cy="421" r="2.5" /><circle cx="380" cy="421" r="2.5" />
+          <circle cx="440" cy="421" r="2.5" /><circle cx="500" cy="421" r="3" opacity="0.3" />
+          <circle cx="560" cy="421" r="2.5" /><circle cx="620" cy="421" r="2.5" />
+          <circle cx="680" cy="421" r="3" opacity="0.3" /><circle cx="740" cy="421" r="2.5" />
+          <circle cx="800" cy="421" r="2.5" /><circle cx="860" cy="421" r="3" opacity="0.3" />
+          <circle cx="920" cy="421" r="2.5" /><circle cx="980" cy="421" r="2.5" />
+          <circle cx="1040" cy="421" r="2.5" /><circle cx="1100" cy="421" r="3" opacity="0.3" />
+          <circle cx="1160" cy="421" r="2.5" /><circle cx="1220" cy="421" r="2.5" />
+        </g>
+        <!-- Studio spotlight arc -->
+        <ellipse cx="720" cy="-60" rx="520" ry="300" fill="none" stroke="#1E90FF" stroke-width="1" opacity="0.06" />
+        <ellipse cx="720" cy="-60" rx="380" ry="220" fill="none" stroke="#1E90FF" stroke-width="0.5" opacity="0.04" />
+      </svg>
+      <!-- Animated equalizer at bottom -->
+      <div class="hero-eq" id="heroEq"></div>
+    </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-glow-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">15+ Years of Experience &nbsp;·&nbsp; Trap &amp; Hip-Hop</div>
+
+      <h1 class="hero-title">
+        JOE LAURIER<br>
+        <span class="accent">PRODUCTION</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Professional trap &amp; hip-hop beats &nbsp;·&nbsp; Free Mix &amp; Mastering for your <strong style="color:#1E90FF">1st song</strong>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#beats" class="btn-primary">Listen to the beats</a>
+        <a href="#mix-master" class="btn-outline">Submit my song</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">9+</span>
+          <span class="stat-label">Beats</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Free · 1st song</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">72H</span>
+          <span class="stat-label">Turnaround</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Social strip -->
+  <div class="social-strip">
+    <span class="social-strip-label">Follow us</span>
+    <a href="https://www.youtube.com/@JoeLaurier" target="_blank" rel="noopener" class="social-strip-link">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      YouTube
+    </a>
+    <span class="social-strip-sep">·</span>
+    <a href="https://www.instagram.com/joelaurierproduction/" target="_blank" rel="noopener" class="social-strip-link">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      Instagram
+    </a>
+    <span class="social-strip-sep">·</span>
+    <a href="https://www.beatstars.com/joelaurierproduction" target="_blank" rel="noopener" class="social-strip-link">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 L3 7.5 L12 12 L21 7.5 Z M3 12 L12 16.5 L21 12 M3 16.5 L12 21 L21 16.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      BeatStars
+    </a>
+  </div>
+
+  <!-- ====================================================
+       BEATS
+       ==================================================== -->
+  <section id="beats">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">// Catalog</span>
+        <h2 class="section-title">OUR BEATS</h2>
+        <p class="section-subtitle">
+          Trap, Hip-Hop &amp; Drill — Free Mix &amp; Mastering included with every purchase
+        </p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter by genre">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Trap">Trap</button>
+        <button class="filter-btn" data-filter="Hip-Hop">Hip-Hop</button>
+        <button class="filter-btn" data-filter="Drill">Drill</button>
+      </div>
+
+      <div class="beats-grid" id="beatsGrid" aria-live="polite"></div>
+
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="https://www.beatstars.com/joelaurierproduction" target="_blank" rel="noopener" class="btn-outline">
+          View all my beats on BeatStars ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- ====================================================
+       MIX & MASTERING
+       ==================================================== -->
+  <section id="mix-master">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">// Service</span>
+        <h2 class="section-title">FREE MIX &amp; MASTERING</h2>
+        <p class="section-subtitle">Delivered within 72 hours</p>
+        <div class="free-badge">
+          🎁 Free for your <strong>1st song only</strong> — Pricing available after that
+        </div>
+      </div>
+
+      <!-- Process steps -->
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-icon">
+            <span>🎙️</span>
+            <span class="step-num">1</span>
+          </div>
+          <h3 class="step-title">Record your tracks</h3>
+          <p class="step-desc">WAV files, dry vocals only. No reverb, delay, Auto-Tune, EQ or compression.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-icon">
+            <span>🏷️</span>
+            <span class="step-num">2</span>
+          </div>
+          <h3 class="step-title">Name your files</h3>
+          <p class="step-desc">vocal_chorus_main.wav, vocal_verse1.wav, adlibs_chorus.wav… Be precise and clear.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-icon">
+            <span>📁</span>
+            <span class="step-num">3</span>
+          </div>
+          <h3 class="step-title">Upload to Google Drive</h3>
+          <p class="step-desc">Create a shared folder named after your song and copy the share link.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-icon">
+            <span>📋</span>
+            <span class="step-num">4</span>
+          </div>
+          <h3 class="step-title">Fill out the form</h3>
+          <p class="step-desc">BPM, key, beat used and description of each track. Incomplete submissions are rejected.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Requirements + Example -->
+      <div class="requirements-grid">
+
+        <div class="req-box">
+          <h3 class="req-box-title">Technical requirements</h3>
+          <ul class="req-list">
+            <li><strong>WAV files only</strong> (44.1 kHz / 24-bit minimum)</li>
+            <li><strong>No effects</strong> on any track — no reverb, delay, Auto-Tune, EQ or compression</li>
+            <li><strong>BPM and key</strong> are mandatory — use the BPM of the purchased beat</li>
+            <li><strong>Clear description</strong> of each track in the form</li>
+          </ul>
+        </div>
+
+        <div class="req-box">
+          <h3 class="req-box-title">Correct submission example</h3>
+          <table class="example-table">
+            <thead>
+              <tr>
+                <th>File</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>vocal_chorus_main.wav</td>
+                <td>Main Chorus Vocal</td>
+              </tr>
+              <tr>
+                <td>vocal_verse1.wav</td>
+                <td>Verse 1 Vocal</td>
+              </tr>
+              <tr>
+                <td>vocal_verse2.wav</td>
+                <td>Verse 2 Vocal</td>
+              </tr>
+              <tr>
+                <td>adlibs_chorus.wav</td>
+                <td>Chorus Ad-libs</td>
+              </tr>
+              <tr>
+                <td>harmonies_chorus.wav</td>
+                <td>Chorus Harmonies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Google Drive Guide -->
+      <div class="drive-guide">
+        <h3 class="drive-guide-title">
+          <svg width="22" height="22" viewBox="0 0 87.3 78" fill="#1E90FF" aria-hidden="true">
+            <path
+              d="M 6.6 66.85 L 21.9 55.8 L 37.2 66.85 L 26.1 78 L 6.6 66.85 Z M 50.1 33.15 L 29.4 0 L 57.9 0 L 87.3 55.8 L 65.4 55.8 Z" />
+          </svg>
+          Google Drive Guide — Step by Step
+        </h3>
+        <ol class="drive-steps">
+          <li>Go to <strong>drive.google.com</strong> and create a <strong>new folder</strong> named after your song
+          </li>
+          <li>Upload all your <strong>WAV files</strong> into that folder</li>
+          <li>Right-click the folder → <strong>Share</strong> → <strong>Copy link</strong></li>
+          <li>In sharing settings, change access to <strong>"Anyone with the link"</strong> can view</li>
+          <li>Paste the link in the <em>Google Drive Link</em> field of the form below</li>
+        </ol>
+      </div>
+
+      <!-- SUBMISSION FORM -->
+      <div class="form-container" id="contact">
+
+        <div class="form-warning">
+          <span aria-hidden="true">⚠️</span>
+          <span>
+            <strong>Incomplete submission = automatic rejection.</strong>
+            Read all instructions and technical requirements before submitting.
+          </span>
+        </div>
+
+        <!--
+          FORMSPREE: Replace "METTRE_TON_ID" with your Formspree form ID.
+          1. Create an account at formspree.io
+          2. Create a new form
+          3. Copy the ID (e.g. xpzvkwqb) and replace METTRE_TON_ID below
+        -->
+        <form id="submissionForm" action="https://formspree.io/f/mlgoplwg" method="POST" novalidate>
+
+          <!-- Honeypot anti-spam (invisible) -->
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_language" value="en">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="formArtist">
+                Artist name <span class="req" aria-label="required">*</span>
+              </label>
+              <input class="form-control" type="text" id="formArtist" name="artist_name" required
+                placeholder="Your artist name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formEmail">
+                Email <span class="req" aria-label="required">*</span>
+              </label>
+              <input class="form-control" type="email" id="formEmail" name="email" required placeholder="your@email.com"
+                autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="formSong">
+                Song name <span class="req" aria-label="required">*</span>
+              </label>
+              <input class="form-control" type="text" id="formSong" name="song_name" required
+                placeholder="Your song title">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formBeat">
+                Beat used <span class="req" aria-label="required">*</span>
+              </label>
+              <select class="form-control" id="formBeat" name="beat_used" required>
+                <option value="">— Choose a beat —</option>
+                <!-- Populated by JS -->
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="formBpm">
+                BPM <span class="req" aria-label="required">*</span>
+              </label>
+              <input class="form-control" type="number" id="formBpm" name="bpm" required min="60" max="220"
+                placeholder="e.g. 140">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formScale">
+                Key / Scale <span class="req" aria-label="required">*</span>
+              </label>
+              <select class="form-control" id="formScale" name="scale" required>
+                <option value="">— Choose a key —</option>
+                <optgroup label="── Minor ──">
+                  <option>A Minor</option>
+                  <option>A# Minor</option>
+                  <option>B Minor</option>
+                  <option>C Minor</option>
+                  <option>C# Minor</option>
+                  <option>D Minor</option>
+                  <option>D# Minor</option>
+                  <option>E Minor</option>
+                  <option>F Minor</option>
+                  <option>F# Minor</option>
+                  <option>G Minor</option>
+                  <option>G# Minor</option>
+                </optgroup>
+                <optgroup label="── Major ──">
+                  <option>A Major</option>
+                  <option>A# Major / Bb Major</option>
+                  <option>B Major</option>
+                  <option>C Major</option>
+                  <option>C# Major / Db Major</option>
+                  <option>D Major</option>
+                  <option>D# Major / Eb Major</option>
+                  <option>E Major</option>
+                  <option>F Major</option>
+                  <option>F# Major / Gb Major</option>
+                  <option>G Major</option>
+                  <option>G# Major / Ab Major</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formDrive">
+              Google Drive link <span class="req" aria-label="required">*</span>
+            </label>
+            <input class="form-control" type="url" id="formDrive" name="google_drive_link" required
+              placeholder="https://drive.google.com/drive/folders/…">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formTracks">
+              Description of each track <span class="req" aria-label="required">*</span>
+            </label>
+            <textarea class="form-control" id="formTracks" name="track_descriptions" required rows="6"
+              placeholder="vocal_chorus_main.wav — Main Chorus Vocal&#10;vocal_verse1.wav — Verse 1 Vocal&#10;vocal_verse2.wav — Verse 2 Vocal&#10;adlibs_chorus.wav — Chorus Ad-libs&#10;harmonies_chorus.wav — Chorus Harmonies"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="formNotes">Additional notes</label>
+            <textarea class="form-control" id="formNotes" name="additional_notes" rows="3"
+              placeholder="Musical references, special requests, project context…"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send my song →</button>
+
+        </form>
+
+        <!-- Success message (shown after successful submission) -->
+        <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+          <div class="form-success-icon">✅</div>
+          <h3>Submission received!</h3>
+          <p>Thanks! I'll listen to your tracks and get back to you within <strong>72 hours</strong>.</p>
+        </div>
+
+      </div><!-- /.form-container -->
+
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       ABOUT
+       ==================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-photo">
+          <!--
+            To add your photo, replace the placeholder div with:
+            <img src="../assets/images/joe-laurier.jpg" alt="Joe Laurier">
+          -->
+          <img src="../assets/Studio.png" alt="Joe Laurier">
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag about-section-tag">// About</span>
+          <h2 class="about-title">JOE LAURIER<br>PRODUCTION</h2>
+
+          <p class="about-text">
+            Joe Laurier Production is an independent music production studio with over
+            <strong style="color:#fff">15 years of experience</strong> in the hip-hop industry,
+            specializing in trap and hip-hop beats with a dark, cinematic and hard-hitting sound identity.
+          </p>
+          <p class="about-text">
+            Every beat is crafted with meticulous attention to detail — 808s that hit deep in the low end,
+            melodies that stay in your head, and professional arrangements that will give your music
+            the sound it deserves.
+          </p>
+          <p class="about-text">
+            Free Mix &amp; Mastering is included with every beat purchase, because a professional sound
+            shouldn't be reserved for big budgets.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====================================================
+       FOOTER
+       ==================================================== -->
+  <footer>
+    <div class="footer-inner">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div>
+          <div class="footer-brand-logo">
+            <img src="../assets/Logo.png" alt="Joe Laurier Production">
+          </div>
+          <p class="footer-tagline">
+            Professional trap &amp; hip-hop beats. Free Mix &amp; Mastering included.<br>
+            15+ years of experience in the industry.
+          </p>
+        </div>
+
+        <!-- Quick links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#beats">Beats</a></li>
+            <li><a href="#mix-master">Mix &amp; Master</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h4 class="footer-col-title">Social</h4>
+          <div class="social-links">
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@JoeLaurier" target="_blank" rel="noopener" class="social-link"
+              aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+
+            <!-- BeatStars -->
+            <a href="https://www.beatstars.com/joelaurierproduction" target="_blank" rel="noopener" class="social-link"
+              aria-label="BeatStars">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3 L3 7.5 L12 12 L21 7.5 Z M3 12 L12 16.5 L21 12 M3 16.5 L12 21 L21 16.5"
+                  stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/joelaurierproduction/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+      </div><!-- /.footer-grid -->
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Joe Laurier Production. All rights reserved.</p>
+        <a href="/" style="color:#444;font-size:.82rem;transition:color .2s" onmouseover="this.style.color='#1E90FF'"
+          onmouseout="this.style.color='#444'">
+          Version française →
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JS variables (before script load) -->
+  <script>
+    const BASE_PATH = '../'; // Racine depuis /en/ — ne pas modifier
+    const LANG = 'en';  // Language of this page
+  </script>
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>
