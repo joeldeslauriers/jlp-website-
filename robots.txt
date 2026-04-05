@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://joeldeslauriers.github.io/jlp-website-/sitemap.xml
+Sitemap: https://www.joelaurierproduction.com/sitemap.xml
