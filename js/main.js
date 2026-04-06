@@ -18,6 +18,17 @@ const BASE = (typeof BASE_PATH !== 'undefined') ? BASE_PATH : '';
 // ============================================================
 const beats = [
   {
+    id: 2,
+    name: "Hitman",
+    bpm: 145,
+    scale: "Bb Major",
+    genre: "Trap",
+    price: 10.00,
+    file: "beats/Hitman/Joe Laurier - Hitman - 145 BPM - Bb Major - 14 LUFS.mp3",
+    cover: "beats/Hitman/73e37e66-f1ff-462e-b4ca-46185763159c.png",
+    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
+  },
+  {
     id: 1,
     name: "Back to Back",
     bpm: 140,
@@ -26,6 +37,17 @@ const beats = [
     price: 10.00,
     file: "beats/Back to Back/Joe Lauriers - Back to Back - 140BPM - Gm - 14 L.mp3",
     cover: "beats/Back to Back/Youtube Image.png",
+    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
+  },
+  {
+    id: 4,
+    name: "Like I Do",
+    bpm: 140,
+    scale: "C# Minor",
+    genre: "Trap",
+    price: 10.00,
+    file: "beats/Like I Do/Joe Lauriers - Love you - 140BPM - C M - 14 L.mp3",
+    cover: "beats/Like I Do/72890339-1c69-48a6-8959-e947bbd61b2c.png",
     beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
   },
   {
@@ -40,17 +62,6 @@ const beats = [
     beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
   },
   {
-    id: 2,
-    name: "Hitman",
-    bpm: 145,
-    scale: "Bb Major",
-    genre: "Trap",
-    price: 10.00,
-    file: "beats/Hitman/Joe Laurier - Hitman - 145 BPM - Bb Major - 14 LUFS.mp3",
-    cover: "beats/Hitman/73e37e66-f1ff-462e-b4ca-46185763159c.png",
-    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
-  },
-  {
     id: 3,
     name: "Keep On Running",
     bpm: 130,
@@ -59,17 +70,6 @@ const beats = [
     price: 10.00,
     file: "beats/Keep On Running/Joe Laurier - Keep On Running - 130 BPM - Em - 14 LUFS - Officiel-002.mp3",
     cover: "beats/Keep On Running/377d1f5b-46f4-4fa8-8cb4-aebbc55ec72f.png",
-    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
-  },
-  {
-    id: 4,
-    name: "Like I Do",
-    bpm: 140,
-    scale: "C# Minor",
-    genre: "Trap",
-    price: 10.00,
-    file: "beats/Like I Do/Joe Lauriers - Love you - 140BPM - C M - 14 L.mp3",
-    cover: "beats/Like I Do/72890339-1c69-48a6-8959-e947bbd61b2c.png",
     beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
   },
   {
@@ -158,7 +158,7 @@ function renderBeats(filter = 'all') {
 
   // Label "Acheter" bilingue selon la page courante
   const buyLabel   = (typeof LANG !== 'undefined' && LANG === 'en') ? 'Buy →' : 'Acheter →';
-  const licLabel   = (typeof LANG !== 'undefined' && LANG === 'en') ? 'Exclusive License' : 'Licence exclusive';
+  const licLabel   = (typeof LANG !== 'undefined' && LANG === 'en') ? 'License' : 'Licence';
 
   grid.innerHTML = list.map(beat => `
     <div class="beat-card" id="beat-${beat.id}" data-genre="${beat.genre}">
@@ -507,6 +507,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Léger délai pour laisser le DOM se peindre avant les animations
   requestAnimationFrame(initFadeIn);
 
-  // Autoplay First Class (id: 9) au chargement ou au premier geste
-  initAutoplay(9);
+  // Autoplay Still Blazing (id: 7) au chargement ou au premier geste
+  initAutoplay(7);
 });
