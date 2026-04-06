@@ -40,6 +40,17 @@ const beats = [
     beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
   },
   {
+    id: 5,
+    name: "Like That",
+    bpm: 130,
+    scale: "D Minor",
+    genre: "Hip-Hop",
+    price: 10.00,
+    file: "beats/Like That/Joe Laurier - Like That -130 BPM -  Dm - 14 LUFS-002.mp3",
+    cover: "beats/Like That/d6f73f6e-a849-402e-83ec-9038c54c5733.png",
+    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
+  },
+  {
     id: 4,
     name: "Like I Do",
     bpm: 140,
@@ -70,17 +81,6 @@ const beats = [
     price: 10.00,
     file: "beats/Keep On Running/Joe Laurier - Keep On Running - 130 BPM - Em - 14 LUFS - Officiel-002.mp3",
     cover: "beats/Keep On Running/377d1f5b-46f4-4fa8-8cb4-aebbc55ec72f.png",
-    beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
-  },
-  {
-    id: 5,
-    name: "Like That",
-    bpm: 130,
-    scale: "D Minor",
-    genre: "Hip-Hop",
-    price: 10.00,
-    file: "beats/Like That/Joe Laurier - Like That -130 BPM -  Dm - 14 LUFS-002.mp3",
-    cover: "beats/Like That/d6f73f6e-a849-402e-83ec-9038c54c5733.png",
     beatstarsUrl: "https://www.beatstars.com/joelaurierproduction"
   },
   {
@@ -507,6 +507,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Léger délai pour laisser le DOM se peindre avant les animations
   requestAnimationFrame(initFadeIn);
 
-  // Autoplay Still Blazing (id: 7) au chargement ou au premier geste
-  initAutoplay(7);
+  // Autoplay Like I Do (id: 4) au chargement ou au premier geste
+  initAutoplay(4);
 });
